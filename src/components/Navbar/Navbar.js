@@ -1,13 +1,19 @@
+import * as React from "react";
+import { Link } from "react-router-dom";
 import logo from '../../assets/images/Logo_Kasa.svg'
-// import '../header.css'
+import './Navbar.css'
 
-export default function Header() {
+export default function Navbar() {
     return (
         <nav className='kasa-navbar'>
-            <img className="kasa-navbar-logo" src={logo} alt="Logo Kasa"/>
+            <Link to='/'><img className="kasa-navbar-logo" src={logo} alt="Logo Kasa"/></Link>
             <ul className='kasa-navbar-menu'>
-                <li>Accueil</li>
-                <li>A propos</li>
+                <li>
+                    <Link to='/'>Accueil</Link>
+                </li>
+                <li>
+                    <Link to='/about'>À propos</Link>
+                </li>
             </ul>
         </nav>
     )

@@ -1,0 +1,13 @@
+.kasa-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.kasa-navbar-logo {
+  height: 5vh;
+  width: auto;
+}
+.kasa-navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
