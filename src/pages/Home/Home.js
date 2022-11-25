@@ -6,8 +6,7 @@ import apartmentList from '../../datas/apartmentList.json'
 export default function Home() {
   return (
     <div className='kasa-root'>
-      <Banner src={banner}/>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <Banner src={banner} title='Chez vous, partout et ailleurs'/>
       <div className='kasa-root-rental'>
         {apartmentList.map(({ id, title, cover}) =>
         <div key={id}>
