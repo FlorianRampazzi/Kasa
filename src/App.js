@@ -1,4 +1,3 @@
-import "./styles/App.css"
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
@@ -15,7 +14,7 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
-                <Route path='/apartement/:id' element={<Rental />} />
+                <Route path='/apartment/:id' element={<Rental />} />
                 <Route path='/*' element={<NotFound />} />
             </Routes>
             <Footer />

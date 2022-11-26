@@ -1,20 +1,16 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assets/images/Logo_Kasa.svg'
+import logo from '../../assets/images/Logo_Kasa_Orange.svg'
 import './Navbar.css'
 
 export default function Navbar() {
     return (
         <nav className='kasa-navbar'>
             <Link to='/'><img className="kasa-navbar-logo" src={logo} alt="Logo Kasa"/></Link>
-            <ul className='kasa-navbar-menu'>
-                <li>
+            <div className='kasa-navbar-menu'>
                     <Link to='/'>Accueil</Link>
-                </li>
-                <li>
                     <Link to='/about'>À propos</Link>
-                </li>
-            </ul>
+            </div>
         </nav>
     )
 }

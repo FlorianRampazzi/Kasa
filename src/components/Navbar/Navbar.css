@@ -1,13 +1,24 @@
 .kasa-navbar {
+  margin: 5vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .kasa-navbar-logo {
-  height: 5vh;
+  height: 10vw;
   width: auto;
 }
 .kasa-navbar-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5vw;
 }
+.kasa-navbar-menu a {
+  display: flex;
+  align-items: center;
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: #FF6060;
+  text-decoration: none;
+  text-transform: uppercase;
+}/*# sourceMappingURL=Navbar.css.map */

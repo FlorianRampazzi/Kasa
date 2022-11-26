@@ -1,0 +1,38 @@
+.kasa-root {
+  margin: 5vw;
+}
+.kasa-root-rental {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+@media screen and (min-width: 768px) {
+  .kasa-root {
+    margin: 5rem;
+  }
+  .kasa-root-rental {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .kasa-root {
+    margin: 10rem;
+  }
+  .kasa-root-rental {
+    padding: 5rem;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    row-gap: 6rem;
+  }
+}/*# sourceMappingURL=Home.css.map */
