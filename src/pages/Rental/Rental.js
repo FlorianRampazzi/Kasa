@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import apartmentList from '../../datas/apartmentList.json'
+import Collapse from "../../components/Collapse/Collapse"
 import Rating from '../../components/Rating/Rating'
 import Tag from '../../components/Tag/Tag'
 
@@ -18,6 +19,8 @@ export default function Rental() {
         <Tag content={apartment.tags} />
       </div>
       
+      <Collapse title='Équipement' content={apartment.equipments} />
+
     </div>
   )
 }

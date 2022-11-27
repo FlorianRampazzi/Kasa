@@ -1,9 +1,10 @@
 import React, {useState, useRef, useEffect } from 'react'
+// import apartmentList from '../../datas/apartmentList.json'
 import Chevron from '../../assets/images/Chevron.svg'
 import './Collapse.css'
 
 
-export default function Collapse({ title, content}) {
+export default function Collapse({ title, content, id}) {
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
 
@@ -17,15 +18,24 @@ export default function Collapse({ title, content}) {
         setHeightEl(`${refHeight.current.scrollHeight}px`)
     }, [])
 
+    // const equipment = apartmentList.equipment
 
     return (
         <div className='kasa-collapse'>
             <div onClick={toggleState} className='kasa-collapse-visible'>
                 <h2>{title}</h2>
-                <img className={toggle ? 'rotate' : null } src={Chevron} alt='Chevron down' />
+                <img className={toggle ? 'rotate' : null} src={Chevron} alt='Chevron' />
             </div>
             <div ref={refHeight} className={toggle ? 'kasa-collapse-toggle animate' : 'kasa-collapse-toggle'} style={{height: toggle ? `${heightEl}` : '0px'}}>
-                <p aria-hidden={toggle ? 'true' : 'false'}> {content}</p>
+                {typeof content === typeof '' ? (
+                    <p aria-hidden={toggle ? 'true' : 'false'} className='kasa-collapse-toggle-content'>{content}</p>
+                ) : (
+                    <ul>
+                        {content.map((equipmentElem) => 
+                            <li key={equipmentElem.toString()} className='kasa-collapse-toggle-content'>{equipmentElem}</li>
+                        )}
+                    </ul>
+                )}
             </div>
         </div>
     )

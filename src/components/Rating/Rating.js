@@ -4,16 +4,12 @@ import GreyStar from '../../assets/images/Star_Grey.svg'
 import './Rating.css'
 
 export default function Rating({value}) {
-    const range =['1','2','3','4','5']
+    const range = ['1','2','3','4','5']
 
     return (
         <div className='kasa-rental-rating-star'>
-            {range.map((rangeElem) => 
-                value >= rangeElem ? (
-                    <img key={`Star_${rangeElem.toString}/5`} src={OrangeStar} alt='Etoile orange'/>
-                ) : (
-                    <img key={`Star_${rangeElem.toString}/5`} src={GreyStar} alt='Etoile grise'/>
-                )
+            {range.map((rangeElem, index) => 
+                <img key={index} src={value >= rangeElem ? OrangeStar : GreyStar} alt={value >= rangeElem ? 'Étoile orange' : 'Étoile grise'} />
             )}
         </div>
     )
