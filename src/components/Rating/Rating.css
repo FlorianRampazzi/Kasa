@@ -1,5 +1,6 @@
 .kasa-rental-rating-star {
-  margin: 0 0.5rem;
+  display: flex;
+  gap: 1rem;
 }
 .kasa-rental-rating-star img {
   width: 1.5rem;

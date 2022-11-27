@@ -7,14 +7,14 @@ export default function Rating({value}) {
     const range =['1','2','3','4','5']
 
     return (
-        <span className='kasa-rental-rating-star'>
+        <div className='kasa-rental-rating-star'>
             {range.map((rangeElem) => 
                 value >= rangeElem ? (
-                    <img src={OrangeStar} alt='Etoile orange'/>
+                    <img key={`Star_${rangeElem.toString}/5`} src={OrangeStar} alt='Etoile orange'/>
                 ) : (
-                    <img src={GreyStar} alt='Etoile grise'/>
+                    <img key={`Star_${rangeElem.toString}/5`} src={GreyStar} alt='Etoile grise'/>
                 )
             )}
-        </span>
+        </div>
     )
 }
