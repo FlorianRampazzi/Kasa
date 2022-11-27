@@ -1,6 +1,6 @@
 .kasa-root {
     margin: 5vw;
-    &-rental {
+    &-apartments {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -11,7 +11,7 @@
 @media screen and (min-width: 768px){
     .kasa-root {
         margin: 5rem;
-        &-rental {
+        &-apartments {
             justify-content: center;
             align-items: center;
             flex-direction: row;
@@ -28,7 +28,7 @@
 @media screen and (min-width: 1024px){
     .kasa-root {
         margin: 10rem;
-        &-rental {
+        &-apartments {
             padding: 5rem;
             column-gap: 5rem;
             row-gap: 6rem;

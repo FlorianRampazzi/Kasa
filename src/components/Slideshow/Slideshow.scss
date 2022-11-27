@@ -1,6 +1,6 @@
 .kasa-rental-slideshow {
     width: 100%;
-    height: 350px;
+    height: 40rem;
     position: relative;
     border-radius: 2.5px;
     &::after {
@@ -14,23 +14,25 @@
         background: #000000;
         mix-blend-mode: darken;
         opacity: 0.15;
-        border-radius: 2.5px;   
+        border-radius: 2.5rem;   
     }
     &-arrowLeft {
         position: absolute;
         top: 50%;
         left: 2.5rem;
         transform: translateY(-50%);
-        width: 3.5rem;
+        width: 2rem;
         z-index: 1;
+        cursor: pointer;
     }
     &-arrowRight {
         position: absolute;
         top: 50%;
         right: 2.5rem;
         transform: translateY(-50%);
-        width: 3.5rem;
+        width: 2rem;
         z-index: 1;
+        cursor: pointer;
     }
     &-slide {
         border-radius: 2.5rem;
@@ -44,7 +46,7 @@
         transform: translateX(-50%);
         bottom: 2rem;
         color: #ffffff;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 500;
         z-index: 1;
     }

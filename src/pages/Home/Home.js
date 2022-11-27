@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='kasa-root'>
       <Banner src={banner} title='Chez vous, partout et ailleurs'/>
-      <div className='kasa-root-rental'>
+      <div className='kasa-root-apartments'>
         {apartmentList.map(({ id, title, cover}) =>
           <Thumb key={id} id={id} title={title} cover={cover} />
         )}

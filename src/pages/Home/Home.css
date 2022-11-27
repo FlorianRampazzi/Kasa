@@ -1,7 +1,7 @@
 .kasa-root {
   margin: 5vw;
 }
-.kasa-root-rental {
+.kasa-root-apartments {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -12,7 +12,7 @@
   .kasa-root {
     margin: 5rem;
   }
-  .kasa-root-rental {
+  .kasa-root-apartments {
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -29,7 +29,7 @@
   .kasa-root {
     margin: 10rem;
   }
-  .kasa-root-rental {
+  .kasa-root-apartments {
     padding: 5rem;
     -moz-column-gap: 5rem;
          column-gap: 5rem;
