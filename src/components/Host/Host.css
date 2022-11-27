@@ -1,15 +1,16 @@
-.kasa-rental-host {
+.kasa-accomodation-host {
   width: 20rem;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
 }
-.kasa-rental-host-name {
+.kasa-accomodation-host-name {
   color: #FF6060;
-  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-align: right;
 }
-.kasa-rental-host-picture {
+.kasa-accomodation-host-picture {
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;

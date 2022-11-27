@@ -19,11 +19,11 @@ export default function Slideshow({slides, alt}) {
     }
 
     return (
-        <div className='kasa-rental-slideshow'>
-            <img src={LeftArrow} className='kasa-rental-slideshow-arrowLeft' onClick={goToPrevious} alt='Fleche de gauche'/>
-            <img src={slides[currentIndex]} className='kasa-rental-slideshow-slide' alt={`${alt[currentIndex]} - Interior ${currentIndex}`} />
-            <img src={RightArrow} className='kasa-rental-slideshow-arrowRight' onClick={goToNext}alt='Fleche de gauche'/>
-            <span className='kasa-rental-slideshow-slideIndicator'>{currentIndex + 1}/{slides.length}</span>
+        <div className='kasa-accomodation-slideshow'>
+            <img src={LeftArrow} className='kasa-accomodation-slideshow-arrowLeft' onClick={goToPrevious} alt='Fleche de gauche'/>
+            <img src={slides[currentIndex]} className='kasa-accomodation-slideshow-slide' alt={`${alt[currentIndex]} - Interior ${currentIndex}`} />
+            <img src={RightArrow} className='kasa-accomodation-slideshow-arrowRight' onClick={goToNext}alt='Fleche de gauche'/>
+            <span className='kasa-accomodation-slideshow-slideIndicator'>{currentIndex + 1}/{slides.length}</span>
         </div>
     )
 }

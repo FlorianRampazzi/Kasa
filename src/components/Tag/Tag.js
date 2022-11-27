@@ -1,6 +1,6 @@
 import './Tag.css'
 
-export default function Tag({ key, content}) {
+export default function Tag({content}) {
     const tagsList = content
     const tag = tagsList.map((tag) => 
         <span key={tag.toString()} className='kasa-tag'>
