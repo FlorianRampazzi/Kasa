@@ -1,16 +1,13 @@
-// import { useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
+import './NotFound.css'
 
 export default function NotFound() {
-  // const error = useRouteError();
-  // console.error(error);
 
   return (
-    <div id="error-page">
-      <h1>Oups!</h1>
-      <p>Une erreure est survenue</p>
-      <p>
-        404
-      </p>
+    <div className="kasa-error">
+      <h1 className="kasa-error-title">404</h1>
+      <p className="kasa-error-text">Oups ! La page que vous demandez n'existe pas.</p>
+        <Link to="/" className="kasa-error-link">Retourner sur la page d’accueil</Link>
     </div>
   );
 }

@@ -1,0 +1,56 @@
+.kasa-error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10rem 5rem;
+    &-title {
+        color: #FF6060;
+        text-align: center;
+        font-size: 9.5rem;
+        margin-bottom: 2rem;
+    }
+    &-text {
+        color: #FF6060;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 10rem;
+    }
+    &-link {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #FF6060;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .kasa-error {  
+        &-title {
+            font-size: 14.5rem;
+            margin-bottom: 1rem;
+        }
+        &-text {
+            font-size: 2.2rem;
+            margin-bottom: 13rem;
+        }
+        &-link {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .kasa-error {  
+        &-title {
+            font-size: 22.5rem;
+            margin-bottom: 1rem;
+        }
+        &-text {
+            font-size: 3.6rem;
+            margin-bottom: 13rem;
+        }
+        &-link {
+            font-size: 1.8rem;
+        }
+    }
+}
