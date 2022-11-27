@@ -37,11 +37,34 @@
 
 @media screen and (min-width: 768px) {
   .kasa-banner-container {
-    height: 18vw;
     margin-bottom: 20px;
+  }
+  .kasa-banner-container::after {
+    border-radius: 2.5rem;
+  }
+  .kasa-banner-container-img {
+    border-radius: 2.5rem;
   }
   .kasa-banner-container-title {
     left: 5%;
     font-size: 3.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .kasa-banner-container {
+    height: 22.5rem;
+    margin-bottom: 2rem;
+  }
+  .kasa-banner-container::after {
+    border-radius: 2.5rem;
+  }
+  .kasa-banner-container-img {
+    border-radius: 2.5rem;
+  }
+  .kasa-banner-container-title {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4.8rem;
   }
 }/*# sourceMappingURL=Banner.css.map */
