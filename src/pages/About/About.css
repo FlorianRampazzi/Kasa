@@ -1,0 +1,23 @@
+.kasa-about {
+  margin: 2rem;
+}
+.kasa-about-collapses {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .kasa-about {
+    margin: 2rem 5rem;
+  }
+  .kasa-about-collapses {
+    margin: 2rem 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .kasa-about {
+    margin: 2rem 10rem;
+  }
+  .kasa-about-collapses {
+    margin: 5rem 10rem;
+  }
+}/*# sourceMappingURL=About.css.map */

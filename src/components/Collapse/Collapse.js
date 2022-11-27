@@ -3,9 +3,9 @@ import Chevron from '../../assets/images/Chevron.svg'
 import './Collapse.css'
 
 
-export default function Collapse({ title, content, id}) {
+export default function Collapse({ title, content}) {
     const [toggle, setToggle] = useState(false);
-    const [heightEl, setHeightEl] = useState();
+    const [heightEl, setHeightEl] = useState(0);
 
     const toggleState = () => {
         setToggle(!toggle);
@@ -14,7 +14,7 @@ export default function Collapse({ title, content, id}) {
     const refHeight = useRef();
 
     useEffect(() => {
-        setHeightEl(`${refHeight.current.scrollHeight}px`)
+        setHeightEl(`${refHeight.current.scrollHeight + 5}px`)
     }, [])
 
     return (
@@ -23,9 +23,9 @@ export default function Collapse({ title, content, id}) {
                 <h2>{title}</h2>
                 <img className={toggle ? 'rotate' : null} src={Chevron} alt='Chevron' />
             </div>
-            <div ref={refHeight} className={toggle ? 'kasa-collapse-toggle animate' : 'kasa-collapse-toggle'} style={{height: toggle ? `${heightEl}` : '0px'}}>
+            <div className={toggle ? 'kasa-collapse-toggle animate' : 'kasa-collapse-toggle'} style={{height: toggle ? `${heightEl}` : '0px'}}>
                 {typeof content === typeof '' ? (
-                    <p aria-hidden={toggle ? 'true' : 'false'} className='kasa-collapse-toggle-content'>{content}</p>
+                    <p ref={refHeight} aria-hidden={toggle ? 'true' : 'false'} className='kasa-collapse-toggle-content'>{content}</p>
                 ) : (
                     <ul>
                         {content.map((equipmentElem) => 

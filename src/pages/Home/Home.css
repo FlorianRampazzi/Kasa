@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 768px) {
   .kasa-root {
-    margin: 5rem;
+    margin: 2rem 5rem;
   }
   .kasa-root-apartments {
     justify-content: center;
