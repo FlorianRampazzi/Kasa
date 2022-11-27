@@ -12,9 +12,7 @@ export default function Rental() {
     <div className='kasa-rental'>
       <p>{apartment.title}</p>
 
-      <div className='kasa-rental-rating'>
-        <Rating value={apartment.rating}/>
-      </div>
+      <Rating value={apartment.rating}/>
       
       <div className='kasa-rental-tags'>
         <Tag content={apartment.tags} />
