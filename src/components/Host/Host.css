@@ -1,0 +1,17 @@
+.kasa-rental-host {
+  width: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.kasa-rental-host-name {
+  color: #FF6060;
+  font-size: 12px;
+  text-align: right;
+}
+.kasa-rental-host-picture {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}/*# sourceMappingURL=Host.css.map */

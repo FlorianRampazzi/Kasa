@@ -4,6 +4,7 @@ import Collapse from "../../components/Collapse/Collapse"
 import Rating from '../../components/Rating/Rating'
 import Tag from '../../components/Tag/Tag'
 import Slideshow from "../../components/Slideshow/Slideshow"
+import Host from "../../components/Host/Host"
 
 export default function Rental() {
   const params = useParams()
@@ -18,6 +19,8 @@ export default function Rental() {
       <h1>{apartment.title}</h1>
 
       <Rating value={apartment.rating}/>
+
+      <Host host={apartment.host}/>
       
       <div className='kasa-rental-tags'>
         <Tag content={apartment.tags} />
