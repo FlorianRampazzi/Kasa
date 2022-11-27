@@ -1,5 +1,4 @@
 import React, {useState, useRef, useEffect } from 'react'
-// import apartmentList from '../../datas/apartmentList.json'
 import Chevron from '../../assets/images/Chevron.svg'
 import './Collapse.css'
 
@@ -17,8 +16,6 @@ export default function Collapse({ title, content, id}) {
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`)
     }, [])
-
-    // const equipment = apartmentList.equipment
 
     return (
         <div className='kasa-collapse'>
