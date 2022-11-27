@@ -13,7 +13,7 @@ export default function Navbar() {
                 }}>Accueil</NavLink>
                 <NavLink to='/about' className={({isActive}) => {
                     return isActive ? 'activeLink' : ''
-                }}>À propos</NavLink>
+                }}>À Propos</NavLink>
             </div>
         </nav>
     )
