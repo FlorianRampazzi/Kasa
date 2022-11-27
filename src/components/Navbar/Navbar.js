@@ -8,8 +8,12 @@ export default function Navbar() {
         <nav className='kasa-navbar'>
             <Link to='/'><img className="kasa-navbar-logo" src={logo} alt="Logo Kasa"/></Link>
             <div className='kasa-navbar-menu'>   
-                <NavLink to='/'>Accueil</NavLink>
-                <NavLink to='/about'>À propos</NavLink>
+                <NavLink to='/' className={({isActive}) => {
+                    return isActive ? 'activeLink' : ''
+                }}>Accueil</NavLink>
+                <NavLink to='/about' className={({isActive}) => {
+                    return isActive ? 'activeLink' : ''
+                }}>À propos</NavLink>
             </div>
         </nav>
     )

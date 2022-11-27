@@ -21,4 +21,8 @@
   color: #FF6060;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.activeLink {
+  border-bottom: #FF6060 2px solid;
 }/*# sourceMappingURL=Navbar.css.map */
