@@ -3,6 +3,7 @@ import apartmentList from '../../datas/apartmentList.json'
 import Collapse from "../../components/Collapse/Collapse"
 import Rating from '../../components/Rating/Rating'
 import Tag from '../../components/Tag/Tag'
+import Slideshow from "../../components/Slideshow/Slideshow"
 
 export default function Rental() {
   const params = useParams()
@@ -11,7 +12,10 @@ export default function Rental() {
 
   return (
     <div className='kasa-rental'>
-      <p>{apartment.title}</p>
+
+      <Slideshow slides={apartment.pictures} alt={apartment.title} />
+
+      <h1>{apartment.title}</h1>
 
       <Rating value={apartment.rating}/>
       
