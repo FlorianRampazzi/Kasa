@@ -1,0 +1,54 @@
+.kasa-rental-slideshow {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  border-radius: 2.5px;
+}
+.kasa-rental-slideshow::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.15;
+  border-radius: 2.5rem;
+}
+.kasa-rental-slideshow-arrowLeft {
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.kasa-rental-slideshow-arrowRight {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.kasa-rental-slideshow-slide {
+  border-radius: 2.5rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.kasa-rental-slideshow-slideIndicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  z-index: 1;
+}/*# sourceMappingURL=Slideshow.css.map */
