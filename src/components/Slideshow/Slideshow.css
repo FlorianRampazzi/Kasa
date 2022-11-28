@@ -25,7 +25,10 @@
   transform: translateY(-50%);
   width: 1.5rem;
   z-index: 1;
-  cursor: pointer;
+  -webkit-animation-name: tonext;
+          animation-name: tonext;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 .kasa-accomodation-slideshow-arrowRight {
   cursor: pointer;
@@ -35,7 +38,6 @@
   transform: translateY(-50%);
   width: 1.5rem;
   z-index: 1;
-  cursor: pointer;
 }
 .kasa-accomodation-slideshow-slide {
   border-radius: 1rem;
@@ -99,5 +101,61 @@
   }
   .kasa-accomodation-slideshow-slideIndicator {
     font-size: 1.8rem;
+  }
+}
+@-webkit-keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@-webkit-keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
   }
 }/*# sourceMappingURL=Slideshow.css.map */

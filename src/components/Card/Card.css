@@ -1,3 +1,9 @@
+.kasa-card {
+  transition: all 0.2s ease-in-out;
+}
+.kasa-card:hover {
+  transform: scale(1.025);
+}
 .kasa-card-content {
   background-color: #FF6060;
   border-radius: 1rem;

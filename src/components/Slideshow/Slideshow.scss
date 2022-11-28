@@ -24,7 +24,8 @@
         transform: translateY(-50%);
         width: 1.5rem;
         z-index: 1;
-        cursor: pointer;
+        animation-name: tonext;
+        animation-timing-function: ease;
     }
     &-arrowRight {
         cursor: pointer;
@@ -34,7 +35,6 @@
         transform: translateY(-50%);
         width: 1.5rem;
         z-index: 1;
-        cursor: pointer;
     }
     &-slide {
         border-radius: 1rem;
@@ -100,3 +100,33 @@
         }
     }
 }
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
