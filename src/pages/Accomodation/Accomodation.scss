@@ -1,3 +1,5 @@
+@import '../../styles/color.scss';
+
 .kasa-accomodation {
     margin: 2rem;
     &-slideshow {
@@ -9,12 +11,12 @@
             &-title {
                 font-size: 1.8rem;
                 font-weight: 500;
-                color: #FF6060;
+                color: $main-color;
                 margin-bottom: 0.5rem;
             }
             &-location {
                 font-size: 1.4rem;
-                color: #FF6060;
+                color: $main-color;
                 margin-bottom: 1rem;
             }
             &-tags {
@@ -26,9 +28,6 @@
             justify-content: space-between;
             margin: 1.5rem 0;
         }
-    }
-    &-collapse {
-
     }
 }
 
@@ -51,7 +50,7 @@
                 }
                 &-location {
                     font-size: 1.4rem;
-                    color: #FF6060;
+                    color: $main-color;
                     margin-bottom: 1rem;
                 }
             }
@@ -63,9 +62,6 @@
                 gap: 2.5rem;
                 margin: 1.5rem 0;
             }
-        }
-        &-collapse {
-
         }
     }
 }

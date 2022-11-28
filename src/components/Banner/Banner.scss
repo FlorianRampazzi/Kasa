@@ -1,3 +1,5 @@
+@import '../../styles/color.scss';
+
 .kasa-banner-container {
     position: relative;
     height: 18vw ;
@@ -11,7 +13,7 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: #000000;
+        background: $black;
         mix-blend-mode: darken;
         opacity: 0.3;
         border-radius: 10px;   
@@ -28,7 +30,7 @@
         left: 2.5vw;
         top: 50%;
         transform: translateY(-50%);
-        color: #ffffff;
+        color: $white;
         overflow-wrap: normal;
         font-size: 4.5vw;
         font-weight: 500;

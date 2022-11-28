@@ -1,11 +1,13 @@
+@import '../../styles/color.scss';
+
 .kasa-collapse {
     width: 100%;
     height: auto;
     &-visible {
         position: relative;
-        background-color: #FF6060;
+        background-color: $main-color;
         border-radius: 0.5rem;
-        color: #ffffff;
+        color: $white;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
@@ -27,7 +29,7 @@
         position: relative;
         top: -2.5rem;
         opacity: 0;
-        background-color: #f7f7f7;
+        background-color: $soft-color;
         border-radius: 0 0 0.5rem 0.5rem;
         transition:
         opacity 0.3s ease-in-out,
@@ -39,7 +41,7 @@
             transform: translate(-50%, -50%);
             padding: 1.5rem 1.5rem 1.5rem 1rem;
             font-size: 1.2rem;
-            color: #FF6060;
+            color: $main-color;
             pointer-events: none;
             line-height: 1.3;
             &-list{

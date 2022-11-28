@@ -1,3 +1,5 @@
+@import '../../styles/color.scss';
+
 .kasa-navbar {
   margin: 2rem;
   display: flex;
@@ -18,13 +20,13 @@
       align-items: center;
       font-size: 1.2rem;
       font-weight: 500;
-      color:#FF6060;
+      color: $main-color;
       text-decoration: none;
       text-transform: uppercase;
-      border-bottom: #ffffff 0.2rem solid;
+      border-bottom: $white 0.2rem solid;
     }
     & .activeLink {
-      border-color: #FF6060;
+      border-color:  $main-color;
     }
   }
 }

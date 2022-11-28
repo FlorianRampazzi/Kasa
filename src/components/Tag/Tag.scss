@@ -1,8 +1,10 @@
+@import '../../styles/color.scss';
+
 .kasa-tag {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    background-color: #FF6060;
+    background-color: $main-color;
     text-align: center;
     font-size: 1rem;
     padding: 0.3rem 1.5rem;
