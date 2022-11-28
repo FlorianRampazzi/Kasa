@@ -58,9 +58,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .kasa-collapse {
-    margin: 1rem 0;
-  }
   .kasa-collapse-visible {
     padding: 1rem 1.5rem;
   }
@@ -74,7 +71,7 @@
 }
 @media screen and (min-width: 1024px) {
   .kasa-collapse-visible {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
   }
   .kasa-collapse-visible h2 {
     font-size: 1.8rem;

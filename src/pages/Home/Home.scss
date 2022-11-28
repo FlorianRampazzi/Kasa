@@ -1,6 +1,6 @@
 .kasa-root {
     margin: 2rem;
-    &-accomodations {
+    &-cards {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -11,7 +11,7 @@
 @media screen and (min-width: 768px){
     .kasa-root {
         margin: 2rem 5rem;
-        &-accomodations {
+        &-cards {
             justify-content: center;
             align-items: center;
             flex-direction: row;
@@ -28,7 +28,7 @@
 @media screen and (min-width: 1024px){
     .kasa-root {
         margin: 2rem 10rem;
-        &-accomodations {
+        &-cards {
             padding: 5rem;
             column-gap: 5rem;
             row-gap: 6rem;

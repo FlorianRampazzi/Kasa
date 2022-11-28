@@ -5,3 +5,19 @@
         width: 1.5rem;
     }
 }
+
+@media screen and (min-width: 768px){
+    .kasa-accomodation-rating-star{
+        & img {
+            width: 2.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .kasa-accomodation-rating-star{
+        & img {
+            width: 3rem;
+        }
+    }
+}

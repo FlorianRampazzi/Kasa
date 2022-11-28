@@ -16,3 +16,27 @@
         background-color: #f7f7f7;
     }
 }
+
+@media screen and (min-width: 768px){
+    .kasa-accomodation-host {
+        &-name {
+            font-size: 1.6rem;
+        }
+        &-picture {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .kasa-accomodation-host {
+        &-name {
+            font-size: 1.8rem;
+        }
+        &-picture {
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+    }
+}

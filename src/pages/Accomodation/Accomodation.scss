@@ -4,26 +4,30 @@
         max-height: 25rem;
         margin-bottom: 1.5rem;
     }
-    &-title {
-        font-size: 1.8rem;
-        font-weight: 500;
-        color: #FF6060;
-        margin-bottom: 0.5rem;
+    &-header {
+        &-nameTags {  
+            &-title {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #FF6060;
+                margin-bottom: 0.5rem;
+            }
+            &-location {
+                font-size: 1.4rem;
+                color: #FF6060;
+                margin-bottom: 1rem;
+            }
+            &-tags {
+                margin: 1rem 0;
+            }
+        }
+        &-ratingHost {
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+        }
     }
-    &-location {
-        font-size: 1.4rem;
-        color: #FF6060;
-        margin-bottom: 1rem;
-    }
-    &-tags {
-        margin: 1rem 0;
-    }
-    &-ratingHost {
-        display: flex;
-        justify-content: space-between;
-        margin: 1.5rem 0;
-    }
-    &_collapses {
+    &-collapse {
 
     }
 }
@@ -31,12 +35,73 @@
 @media screen and (min-width: 768px){
     .kasa-accomodation {
         margin: 5rem;
-        
+        &-slideshow {
+            max-height: 25rem;
+            margin-bottom: 1.5rem;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            &-nameTags {
+                &-title {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                
+                    margin-bottom: 0.5rem;
+                }
+                &-location {
+                    font-size: 1.4rem;
+                    color: #FF6060;
+                    margin-bottom: 1rem;
+                }
+            }
+            &-ratingHost {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column-reverse;
+                gap: 2.5rem;
+                margin: 1.5rem 0;
+            }
+        }
+        &-collapse {
+
+        }
     }
 }
 
 @media screen and (min-width: 1024px){
     .kasa-accomodation {
-        margin: 10rem;    
+        margin: 2rem   10rem;
+        &-slideshow {
+            max-height: 41.5rem;
+            margin-bottom: 3rem;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            &-nameTags { 
+                &-title {
+                    font-size: 3.6rem;
+                }
+                &-location {
+                    font-size: 1.8rem;
+                    margin-bottom: 2rem;
+                }
+            } 
+            &-ratingHost {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 2.5rem;
+                flex-direction: column-reverse;
+                margin: 1.5rem 0;
+            }
+        }
+        &-collapses {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+        }  
     }
 }

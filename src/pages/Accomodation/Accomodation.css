@@ -5,21 +5,21 @@
   max-height: 25rem;
   margin-bottom: 1.5rem;
 }
-.kasa-accomodation-title {
+.kasa-accomodation-header-nameTags-title {
   font-size: 1.8rem;
   font-weight: 500;
   color: #FF6060;
   margin-bottom: 0.5rem;
 }
-.kasa-accomodation-location {
+.kasa-accomodation-header-nameTags-location {
   font-size: 1.4rem;
   color: #FF6060;
   margin-bottom: 1rem;
 }
-.kasa-accomodation-tags {
+.kasa-accomodation-header-nameTags-tags {
   margin: 1rem 0;
 }
-.kasa-accomodation-ratingHost {
+.kasa-accomodation-header-ratingHost {
   display: flex;
   justify-content: space-between;
   margin: 1.5rem 0;
@@ -28,9 +28,63 @@
   .kasa-accomodation {
     margin: 5rem;
   }
+  .kasa-accomodation-slideshow {
+    max-height: 25rem;
+    margin-bottom: 1.5rem;
+  }
+  .kasa-accomodation-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .kasa-accomodation-header-nameTags-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .kasa-accomodation-header-nameTags-location {
+    font-size: 1.4rem;
+    color: #FF6060;
+    margin-bottom: 1rem;
+  }
+  .kasa-accomodation-header-ratingHost {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    margin: 1.5rem 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .kasa-accomodation {
-    margin: 10rem;
+    margin: 2rem 10rem;
+  }
+  .kasa-accomodation-slideshow {
+    max-height: 41.5rem;
+    margin-bottom: 3rem;
+  }
+  .kasa-accomodation-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .kasa-accomodation-header-nameTags-title {
+    font-size: 3.6rem;
+  }
+  .kasa-accomodation-header-nameTags-location {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .kasa-accomodation-header-ratingHost {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2.5rem;
+    flex-direction: column-reverse;
+    margin: 1.5rem 0;
+  }
+  .kasa-accomodation-collapses {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
   }
 }/*# sourceMappingURL=Accomodation.css.map */

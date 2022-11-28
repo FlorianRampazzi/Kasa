@@ -1,5 +1,5 @@
-.kasa-accomodation {
-    &-thumb {
+.kasa-card {
+    &-content {
         background-color: #FF6060;
         border-radius: 1rem;
         height: 20rem;
@@ -35,8 +35,8 @@
     }
 }
 @media screen and (min-width: 768px){
-    .kasa-accomodation {
-        &-thumb {
+    .kasa-card {
+        &-content {
             height: 28rem;
             width: 28rem;
             &-title {
@@ -46,8 +46,8 @@
     }
 }
 @media screen and (min-width: 1024px){
-    .kasa-accomodation {
-        &-thumb {
+    .kasa-card {
+        &-content {
             height: 34rem;
             width: 34rem;
         }
