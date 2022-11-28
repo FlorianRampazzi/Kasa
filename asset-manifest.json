@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/P7_Kasa/static/css/main.9e3ce57d.css",
+    "main.js": "/P7_Kasa/static/js/main.d3ee2e67.js",
+    "static/media/About_Banner.png": "/P7_Kasa/static/media/About_Banner.02e1c4f7498de1cb845b.png",
+    "static/media/Header_Banner.png": "/P7_Kasa/static/media/Header_Banner.024f945a990ae17b81b7.png",
+    "static/media/Logo_Kasa_Orange.svg": "/P7_Kasa/static/media/Logo_Kasa_Orange.ac38b36ec692f2f5731bc84c1ac2030e.svg",
+    "static/media/Logo_Kasa_Blanc.svg": "/P7_Kasa/static/media/Logo_Kasa_Blanc.2553fb29683f2c12e44904bd8503bf1b.svg",
+    "index.html": "/P7_Kasa/index.html",
+    "static/media/Chevron.svg": "/P7_Kasa/static/media/Chevron.586001e7427393f6cef81228b4601d8f.svg",
+    "static/media/Left_Arrow.svg": "/P7_Kasa/static/media/Left_Arrow.36d5d33e7a670302642c575bdf49cbed.svg",
+    "static/media/Right_Arrow.svg": "/P7_Kasa/static/media/Right_Arrow.7a4a56ac63f33c66f09b542d66fe814d.svg",
+    "static/media/Star_Grey.svg": "/P7_Kasa/static/media/Star_Grey.06dccca447400012db124c595a41e219.svg",
+    "static/media/Star_Orange.svg": "/P7_Kasa/static/media/Star_Orange.325cf1d54d109e062e0d0468f6412f00.svg",
+    "main.9e3ce57d.css.map": "/P7_Kasa/static/css/main.9e3ce57d.css.map",
+    "main.d3ee2e67.js.map": "/P7_Kasa/static/js/main.d3ee2e67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e3ce57d.css",
+    "static/js/main.d3ee2e67.js"
+  ]
+}
