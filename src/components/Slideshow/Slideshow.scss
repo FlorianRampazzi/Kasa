@@ -17,6 +17,7 @@
         border-radius: 1rem;   
     }
     &-arrowLeft {
+        cursor: pointer;
         position: absolute;
         top: 50%;
         left: 2.5rem;
@@ -26,6 +27,7 @@
         cursor: pointer;
     }
     &-arrowRight {
+        cursor: pointer;
         position: absolute;
         top: 50%;
         right: 2.5rem;

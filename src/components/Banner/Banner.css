@@ -1,7 +1,8 @@
 .kasa-banner-container {
   position: relative;
   height: 18vw;
-  margin-bottom: 2vw;
+  max-height: 11rem;
+  margin-bottom: 2rem;
 }
 .kasa-banner-container::after {
   content: "";
@@ -24,12 +25,13 @@
   border-radius: 10px;
 }
 .kasa-banner-container-title {
-  width: 80%;
+  width: 60%;
   position: absolute;
   left: 2.5vw;
   top: 50%;
   transform: translateY(-50%);
   color: #ffffff;
+  overflow-wrap: normal;
   font-size: 4.5vw;
   font-weight: 500;
   z-index: 1;
@@ -37,7 +39,7 @@
 
 @media screen and (min-width: 768px) {
   .kasa-banner-container {
-    margin-bottom: 20px;
+    max-height: 16.5rem;
   }
   .kasa-banner-container::after {
     border-radius: 2.5rem;
@@ -52,8 +54,7 @@
 }
 @media screen and (min-width: 1024px) {
   .kasa-banner-container {
-    height: 22.5rem;
-    margin-bottom: 2rem;
+    max-height: 22.5rem;
   }
   .kasa-banner-container::after {
     border-radius: 2.5rem;
@@ -62,6 +63,7 @@
     border-radius: 2.5rem;
   }
   .kasa-banner-container-title {
+    width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

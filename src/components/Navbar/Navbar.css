@@ -5,6 +5,7 @@
   align-items: center;
 }
 .kasa-navbar-logo {
+  cursor: pointer;
   height: 10vw;
   max-height: 4.5rem;
   width: auto;
