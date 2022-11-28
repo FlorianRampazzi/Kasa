@@ -10,26 +10,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </BrowserRouter>
 
 );
-
-
-
-// export default function App() {
-//   return (
-//     <Router>
-//       <div>
-//         <Header />
-//         <Routes>
-//           <Route path="/about">
-//             <About />
-//           </Route>
-//           {/* <Route path="/product">
-//             <Product />
-//           </Route> */}
-//           <Route exact path="/">
-//             <Home />
-//           </Route>
-//         </Routes>
-//       </div>
-//     </Router>
-//   );
-// }

@@ -5,7 +5,7 @@ import './Collapse.css'
 
 export default function Collapse({ title, content}) {
     const [toggle, setToggle] = useState(false);
-    const [heightEl, setHeightEl] = useState(0);
+    const [heightEl, setHeightEl] = useState();
 
     const toggleState = () => {
         setToggle(!toggle);
@@ -27,9 +27,9 @@ export default function Collapse({ title, content}) {
                 {typeof content === typeof '' ? (
                     <p ref={refHeight} aria-hidden={toggle ? 'true' : 'false'} className='kasa-collapse-toggle-content'>{content}</p>
                 ) : (
-                    <ul>
+                    <ul ref={refHeight}  className='kasa-collapse-toggle-content'>
                         {content.map((equipmentElem) => 
-                            <li key={equipmentElem.toString()} className='kasa-collapse-toggle-content'>{equipmentElem}</li>
+                            <li key={equipmentElem.toString()} className='kasa-collapse-toggle-content-list'>{equipmentElem}</li>
                         )}
                     </ul>
                 )}
