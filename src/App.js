@@ -6,6 +6,8 @@ import NotFound from './pages/NotFound/NotFound'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 
+/*  Appel des composants de navigation
+    Création des routes Accueil, A Propos, Logement et UrlIntrouvable*/
 export default function App() {
   return (
     <>

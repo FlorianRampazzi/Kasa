@@ -4,6 +4,9 @@ import banner from '../../assets/images/Header_Banner.png'
 import accomodationList from '../../datas/accomodationList.json'
 import './Home.css'
 
+/* Création du composant Home
+  Intégration du composant Banner
+  Affichage des différentes Cards présentes dans l'application */
 export default function Home() {
   return (
     <div className="kasa-root">

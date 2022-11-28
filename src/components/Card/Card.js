@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Card.css'
 
+/* Création du composant Card afin d'afficher tout les logements disponible selon leur id unique.*/
 export default function Card({ id, title, cover }) {
   return (
     <div className="kasa-card">

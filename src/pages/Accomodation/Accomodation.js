@@ -7,13 +7,19 @@ import Slideshow from '../../components/Slideshow/Slideshow'
 import Host from '../../components/Host/Host'
 import './Accomodation.css'
 
+/* Création du composant Accomodation qui affiche toutes les infos d'un logement contenu dans la bdd (ici le JSON)
+   et rédirige l'utilisateur vers la page NotFound si l'id n'est pas présent dans le JSON*/
 export default function Accomodation() {
   const params = useParams()
 
+  // Recherche dans le JSON de l'objet avec l'id correspondant à l'id présent en paramètre URI
   let accomodation = accomodationList.filter(
     (objectJson) => objectJson.id === params.id
   )
 
+  /* Comparaison du résultat de la recherche précédente. 
+    Si le tableau n'est pas vide, attribuer la valeur du premier élément du tableau dans la variable accomodation.
+    Sinon, retourner le composant Navigate qui permet la redirection vers la page NotFound */
   accomodation = accomodation.length !== 0 ? accomodation[0] : false
   if (accomodation === false) {
     return <Navigate to="/notfound" replace />
