@@ -30,13 +30,13 @@ export default function About() {
   ]
 
   return (
-    <div className="kasa-about">
+    <section className="kasa-about">
       <Banner src={banner} />
       <div className="kasa-about-collapses">
         {collapseContent.map(({ title, content }, index) => (
           <Collapse key={index} title={title} content={content} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

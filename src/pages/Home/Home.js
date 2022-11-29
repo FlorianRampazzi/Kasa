@@ -9,13 +9,13 @@ import './Home.css'
   Affichage des différentes Cards présentes dans l'application */
 export default function Home() {
   return (
-    <div className="kasa-root">
+    <section className="kasa-home">
       <Banner src={banner} title="Chez vous, partout et ailleurs" />
-      <div className="kasa-root-cards">
+      <div className="kasa-home-cards">
         {accomodationList.map(({ id, title, cover }) => (
           <Card key={id} id={id} title={title} cover={cover} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

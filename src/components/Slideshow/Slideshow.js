@@ -33,7 +33,7 @@ export default function Slideshow({ slides, alt }) {
   }
 
   return (
-    <div className="kasa-accomodation-slideshow">
+    <figure className="kasa-accomodation-slideshow">
       <img
         src={LeftArrow}
         className="kasa-accomodation-slideshow-arrowLeft"
@@ -54,6 +54,6 @@ export default function Slideshow({ slides, alt }) {
       <span className="kasa-accomodation-slideshow-slideIndicator">
         {currentIndex + 1}/{slides.length}
       </span>
-    </div>
+    </figure>
   )
 }

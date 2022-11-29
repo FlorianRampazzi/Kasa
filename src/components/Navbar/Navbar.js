@@ -9,11 +9,11 @@ import './Navbar.css'
     et de lui appliquer une class le cas échéant.*/
 export default function Navbar() {
   return (
-    <nav className="kasa-navbar">
+    <header className="kasa-navbar">
       <Link to="/">
         <img className="kasa-navbar-logo" src={logo} alt="Logo Kasa" />
       </Link>
-      <div className="kasa-navbar-menu">
+      <nav className="kasa-navbar-menu">
         <NavLink
           to="/"
           className={({ isActive }) => {
@@ -30,7 +30,7 @@ export default function Navbar() {
         >
           À Propos
         </NavLink>
-      </div>
-    </nav>
+      </nav>
+    </header>
   )
 }

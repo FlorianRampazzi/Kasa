@@ -1,6 +1,6 @@
 @import '../../styles/color.scss';
 
-.kasa-root {
+.kasa-home {
     margin: 2rem;
     &-cards {
         display: flex;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .kasa-root {
+    .kasa-home {
         margin: 2rem 5rem;
         &-cards {
             justify-content: center;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (min-width: 1024px){
-    .kasa-root {
+    .kasa-home {
         margin: 2rem 10rem;
         &-cards {
             padding: 5rem;

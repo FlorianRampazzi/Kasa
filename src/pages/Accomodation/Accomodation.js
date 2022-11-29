@@ -26,13 +26,13 @@ export default function Accomodation() {
   }
 
   return (
-    <div className="kasa-accomodation">
-      <div className="kasa-accomodation-nameNtags-slideshow">
+    <section className="kasa-accomodation">
+      <section className="kasa-accomodation-nameNtags-slideshow">
         <Slideshow slides={accomodation.pictures} alt={accomodation.title} />
-      </div>
+      </section>
 
-      <div className="kasa-accomodation-header">
-        <div className="kasa-accomodation-header-nameTags">
+      <section className="kasa-accomodation-header">
+        <header className="kasa-accomodation-header-nameTags">
           <h1 className="kasa-accomodation-header-nameTags-title">
             {accomodation.title}
           </h1>
@@ -42,9 +42,9 @@ export default function Accomodation() {
           <div className="kasa-accomodation-header-nameTags-tags">
             <Tag content={accomodation.tags} />
           </div>
-        </div>
+        </header>
 
-        <div className="kasa-accomodation-header-ratingHost">
+        <aside className="kasa-accomodation-header-ratingHost">
           <Rating
             className="kasa-accomodation-header-ratingHost-rating"
             value={accomodation.rating}
@@ -53,13 +53,13 @@ export default function Accomodation() {
             className="kasa-accomodation-header-ratingHost-host"
             host={accomodation.host}
           />
-        </div>
-      </div>
+        </aside>
+      </section>
 
-      <div className="kasa-accomodation-collapses">
+      <section className="kasa-accomodation-collapses">
         <Collapse title="Description" content={accomodation.description} />
         <Collapse title="Équipement" content={accomodation.equipments} />
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }

@@ -1,7 +1,7 @@
-.kasa-root {
+.kasa-home {
   margin: 2rem;
 }
-.kasa-root-cards {
+.kasa-home-cards {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -9,10 +9,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .kasa-root {
+  .kasa-home {
     margin: 2rem 5rem;
   }
-  .kasa-root-cards {
+  .kasa-home-cards {
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -26,10 +26,10 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .kasa-root {
+  .kasa-home {
     margin: 2rem 10rem;
   }
-  .kasa-root-cards {
+  .kasa-home-cards {
     padding: 5rem;
     -moz-column-gap: 5rem;
          column-gap: 5rem;

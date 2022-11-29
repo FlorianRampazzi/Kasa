@@ -7,15 +7,15 @@ export default function Host({ host }) {
   const firstName = host.name.split(' ')[0]
   const lastName = host.name.split(' ')[1]
   return (
-    <div className="kasa-accomodation-host">
-      <p className="kasa-accomodation-host-name">
+    <figure className="kasa-accomodation-host">
+      <figcaption className="kasa-accomodation-host-name">
         {firstName} <br /> {lastName}
-      </p>
+      </figcaption>
       <img
         src={host.picture}
         className="kasa-accomodation-host-picture"
         alt={`Hôte ${host.name}`}
       />
-    </div>
+    </figure>
   )
 }
