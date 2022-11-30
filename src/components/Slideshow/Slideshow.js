@@ -36,7 +36,11 @@ export default function Slideshow({ slides, alt }) {
     <figure className="kasa-accomodation-slideshow">
       <img
         src={LeftArrow}
-        className="kasa-accomodation-slideshow-arrowLeft"
+        className={
+          slides.length > 1
+            ? 'kasa-accomodation-slideshow-arrowLeft'
+            : 'kasa-accomodation-slideshow-arrowLeft hidden'
+        }
         onClick={goToPrevious}
         alt="Fleche de gauche"
       />
@@ -47,7 +51,11 @@ export default function Slideshow({ slides, alt }) {
       />
       <img
         src={RightArrow}
-        className="kasa-accomodation-slideshow-arrowRight"
+        className={
+          slides.length > 1
+            ? 'kasa-accomodation-slideshow-arrowRight'
+            : 'kasa-accomodation-slideshow-arrowRight hidden'
+        }
         onClick={goToNext}
         alt="Fleche de gauche"
       />

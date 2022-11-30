@@ -55,6 +55,9 @@
         z-index: 1;
     }
 }
+ .hidden {
+    visibility: hidden !important;
+}
 
 @media screen and (min-width: 768px){
     .kasa-accomodation-slideshow {
